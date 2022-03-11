@@ -1,6 +1,7 @@
+using System.Collections.Generic;
 namespace HairSalon.Models
 {
-  class Client
+  public class Client
   {
     public Client()
     {
