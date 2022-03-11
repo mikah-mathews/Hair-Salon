@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 
-namespace Salon
+namespace HairSalon
 {
   public class Startup
   {
@@ -21,10 +21,10 @@ namespace Salon
 
     public void ConfigureServices(IServiceCollection services)
     {
-    services.AddMvc();
+      services.AddMvc();
 
-    services.AddEntityFrameworkMySql()
-        .AddDbContext<ToDoListContext>(options => options
+      services.AddEntityFrameworkMySql()
+        .AddDbContext<HairSalonContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
     }
 
@@ -45,10 +45,5 @@ namespace Salon
         await context.Response.WriteAsync("Hello World!");
       });
     }
-  }
-
-  public static class DBConfiguration
-  {
-    public static string ConnectionString = "server=localhost;user id=root;password=epicodus;port=3306;database=hair_salon;";
   }
 }
