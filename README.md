@@ -1,29 +1,36 @@
-# _{Application Name}_
+# _Hair Salon_
 
 #### By Mikah Mathews
 
-#### _{Brief description of application}_
+#### _An application to see stylists and their clients_
 
 ## Technologies Used
 * C#
 * .NET
 * MStest
+* MySQL
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This is an application for a Hair Salon owner. It allows the user to add Stylists and their shift times. It also allows users to add clients and their information to different stylists._
 
 ## Setup/Installation Requirements
 
-* Visit https://**********.github.com/
+
 
 * Clone this repository to your local machine
-* Navigate to the {Template.Tests} folder using your terminal.
+* Navigate to the HairSalon folder using the terminal
+* Create a file called ```appsettings.json```
+* In ```appsettings.json``` type 
+
+```{
+    "ConnectionStrings": {
+        "DefaultConnection": "Server=localhost;Port=3306;database=mikah_mathews;uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];"
+    }
+}```
 * To install the project's dependencies, in the terminal type ```dotnet restore```
-* Once dependencies are installed, type ```dotnet test``` in the terminal to run the project's tests.
-* To run the application navigate to the {Template} folder using the terminal.
-* Once in the {Template} folder, type ```dotnet run``` to run the program.
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* Once in the HairSalon folder, type ```dotnet run``` to run the program.
+
 
 <img src="/HairSalon/wwwroot/img/salon-schema.png" alt="A screenshot from SQL designer showing two tables. There is Stylists and Clients and are connected through id's" title="SQL Designer Screenshot">
 
