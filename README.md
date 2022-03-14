@@ -28,7 +28,8 @@ _This is an application for a Hair Salon owner. It allows the user to add Stylis
     "ConnectionStrings": {
         "DefaultConnection": "Server=localhost;Port=3306;database=mikah_mathews;uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];"
     }
-}```
+}
+```
 
 * To install the project's dependencies, in the terminal type ```dotnet restore```
 * Once in the HairSalon folder, type ```dotnet run``` to run the program.
