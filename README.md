@@ -23,7 +23,8 @@ _This is an application for a Hair Salon owner. It allows the user to add Stylis
 * Create a file called ```appsettings.json```
 * In ```appsettings.json``` type 
 
-```{
+```
+{
     "ConnectionStrings": {
         "DefaultConnection": "Server=localhost;Port=3306;database=mikah_mathews;uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];"
     }
